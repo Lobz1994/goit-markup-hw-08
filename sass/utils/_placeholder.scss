@@ -1,0 +1,42 @@
+
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+  }
+  %container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px auto;
+  }
+  %padding__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  /* селекторы тегов */
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+  }
+  .h2-studio {
+    text-align: center;
+    margin: 0;
+  
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $blackcolor;
+  }

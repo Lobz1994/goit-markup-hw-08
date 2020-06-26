@@ -1,0 +1,89 @@
+.section-command {
+    @extend %padding__container;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: $filtercolor;
+}
+.container-command{
+    @extend %container;
+    .command-list {
+    display: flex;
+    padding: 0px;
+    margin-top: 50px;
+    margin-bottom: 0;
+}}
+.command-items {
+    background: $whitecolor;
+    border-radius: 4px;
+    margin-right: 30px;
+    width: 270px;
+  
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    &:last-child {
+    margin-right: 0;
+    }
+    .user {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $blackcolor;
+    }
+    .user-skill {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $graycolor;
+    }
+    .container-seti {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-left: 32px;
+    margin-right: 31px;
+}}
+.user-seti {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.icon-fill {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background $time $Function-bezier;
+    .icon-user {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: #afb1b8;
+    transition: fill $time $Function-bezier;
+    }
+    &:hover .icon-user,
+    &:focus .icon-user {
+    fill: $whitecolor;
+    }
+    &:hover,
+    &:focus {
+    background-color: $bluecolor;
+}}
+
+  
+  

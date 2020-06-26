@@ -1,0 +1,40 @@
+.section-client {
+    @extend %container;
+    @extend %padding__container;
+    display: flex;
+    flex-direction: column;
+    .logo-client {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+}}
+.logo-client-items {
+    margin-right: 30px;
+    &:last-child {
+    margin-right: 0;
+    }
+    .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    min-width: 170px;
+    border: 1px solid $graycolor;
+    border-radius: 4px;
+    transition: border $time $Function-bezier;
+    }
+    .icon:hover,
+    .icon:focus {
+    border: 1px solid $bluecolor;
+    }
+    .icon:hover .logo-icon,
+    .icon:focus .logo-icon {
+    fill: $bluecolor;
+}}
+.logo-icon {
+    fill: $graycolor;
+    transition: fill $time $Function-bezier;
+}
+  
+  

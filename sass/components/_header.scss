@@ -1,0 +1,104 @@
+header {
+    border-bottom: 1px solid #ececec;
+  }
+.container-header {
+    display: flex;
+    @extend %container;
+    .header-nav {
+    display: flex;
+    align-items: center;
+}}
+
+.logo {
+    margin-right: 85px;
+    color: $bluecolor;
+    font-family: $logo-Font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    &-studio {
+    color: $blackcolor;
+}}
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    &-item {
+    position: relative;
+    margin-right: 50px;
+    }
+    &-item:last-child {
+    margin-right: 0px;
+}}
+.nav-menu {
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: $blackcolor;
+    transition: color $time $Function-bezier;
+    &:hover,
+    &:focus {
+    color: $bluecolor;
+}}
+.current {
+    color: $bluecolor;
+    position: relative;
+    &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: $bluecolor;
+    border-radius: 2px;
+}}
+.container-connection {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    &-items {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}}
+.list-connection {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+    &:last-child {
+    margin-right: 0px;
+}}
+.nav-contact {
+    display: block;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+  
+    color: $graycolor;
+    transition: color $time $Function-bezier;
+    &:hover,
+    &:focus {
+    color: $bluecolor;
+}}
+.icon-header {
+    margin-right: 10px;
+    fill: currentColor;
+}

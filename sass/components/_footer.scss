@@ -1,0 +1,164 @@
+footer {
+    background-color: $footercolor;
+    .footer-copyright {
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 21px;
+    margin: 0;
+    
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.4);
+}}
+.footer-content {
+    @extend %container;
+    display: flex;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    .container-adress {
+    margin-top: 48px;
+    margin-right: 69px;
+    }
+    .join {
+    margin-top: 56px;
+    margin-right: 94px;
+    }
+    .subscribe {
+    margin-top: 56px;
+}}
+.studio-footer {
+    color: $whitecolor;
+}
+.footer-adress {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    color: $whitecolor;
+}
+.adress-items {
+    margin-top: 9px;
+    margin-bottom: 28px;
+    padding: 0;
+    .adress-list {
+    margin-bottom: 9px;
+}} 
+.footer-contact {
+    display: block;
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    &:hover,
+    &:focus {
+    color: $bluecolor;
+}}
+.footer-connect {
+    margin-top: 0;
+    margin-bottom: 21px;
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $whitecolor;
+}
+.footer-seti {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.footer-seti-items {
+    margin-right: 10px;
+    &:last-child {
+    margin-right: 0;
+}}
+.footer-fon-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $time $Function-bezier;
+    &:hover,
+    &:focus {
+    background-color: $bluecolor;
+    }
+    .footer-icon {
+    fill: $whitecolor;
+}}
+.subscribe-form {
+    width: 358px;
+    height: 50px;
+    background: $footercolor;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    
+    padding: 15px 16px;
+    margin-right: 9px;
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}}
+.button-subscribe {
+    width: 200px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 29px;
+    background: #2196f3;
+    border: 1px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: $primary-Font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: $whitecolor;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    &::after {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-image: url(../images/svg/subscribe.svg);
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+}}
+.button-list {
+    font-family: $primary-Font;
+    font-style: normal;
+    color: $whitecolor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+}
