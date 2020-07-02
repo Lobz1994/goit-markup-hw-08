@@ -1,18 +1,24 @@
 .section-client {
-    @extend %container;
-    @extend %padding__container;
-    display: flex;
-    flex-direction: column;
+    padding: 60px 15px;
+    margin: auto;
+    width: 480px;
     .logo-client {
     display: flex;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    margin-top: 30px;
     margin-bottom: 0;
     padding: 0;
 }}
 .logo-client-items {
-    margin-right: 30px;
-    &:last-child {
-    margin-right: 0;
+    display: inline-block;
+    width: 210px;
+    margin-right: 29px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+    margin-right: 0px;
+    }
+    &:nth-last-child(-n+2) {
+    margin-bottom: 0;
     }
     .icon {
     display: flex;

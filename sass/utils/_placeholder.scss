@@ -10,6 +10,12 @@
   body {
     margin: 0;
   }
+  %сontainer-small {
+    width: 480px;
+    padding: 60px 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   %container {
     width: 1200px;
     padding-left: 15px;
@@ -23,6 +29,8 @@
   /* селекторы тегов */
   ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
   a {
     text-decoration: none;
@@ -39,4 +47,9 @@
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: $blackcolor;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }

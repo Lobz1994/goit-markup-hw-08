@@ -1,5 +1,9 @@
+body.modal-open {
+    overflow: hidden;
+}
 .backdrop {
     position: fixed;
+    overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100%;
@@ -11,15 +15,16 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    display: none;
 }}
 .modal {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50.7%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $time $Function-bezier;
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: $whitecolor;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -61,7 +66,7 @@
     margin-bottom: 28px;
     cursor: pointer;
     .form-input {
-    width: 448px;
+    width: 370px;
     height: 40px;
     margin: 0;
     padding-left: 42px;
@@ -110,7 +115,7 @@
     margin-bottom: 20px;
     .form-texterea {
     resize: none;
-    width: 448px;
+    width: 370px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
@@ -142,6 +147,14 @@
     transition: transform $time linear;
 }}
 .checkbox {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
     -webkit-appearance:none;
     -moz-appearance:none;
     appearance: none;
@@ -184,12 +197,12 @@
 }
 .form-contract {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     font-family: $primary-Font;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: $graycolor;
     .checkbox-label {

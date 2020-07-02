@@ -12,49 +12,58 @@
 
 <body>
   <header>
-    <!--Шапка сайта-->
     <div class="container-header">
 
       <nav class="header-nav">
         <a href="./index.html" class="logo">Web <span class="logo-studio"> Studio</span></a>
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="./index.html" class="nav-menu current">Студия</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="./portfolio.html" class="nav-menu">Портфолио</a>
-          </li>
-          <li class="nav-list-item">
-            <a href="" class="nav-menu">Контакты</a>
-          </li>
-        </ul>
+        <button type="button" 
+                class="menu-button is-open" 
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use class="icon-menu" href="./images/svg/symbol.svg#icon-cross"></use>
+            <use class="icon-cross" href="./images/svg/symbol.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-menu current">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-menu">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-menu">Контакты</a>
+            </li>
+          </ul>
+          <ul>
+  
+            <li class="list-connection">
+              <a href="mailto:info@devstudio.com" class="nav-contact">
+                <svg class="icon-header" width="16" height="11">
+                  <use href="./images/svg/symbol.svg#icon-envelope">
+                  </use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+  
+            <li class="list-connection">
+              <a href="tel:+380961111111" class="nav-contact">
+                <svg class="icon-header" width="10" height="15">
+                  <use href="./images/svg/symbol.svg#icon-Vector">
+                  </use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+  
+          </ul>
+        </div>
+        
       </nav>
-
-      <div class="container-connection">
-        <ul class="container-connection-items">
-
-          <li class="list-connection">
-            <a href="mailto:info@devstudio.com" class="nav-contact">
-              <svg class="icon-header" width="16" height="11">
-                <use href="./images/svg/symbol.svg#icon-envelope">
-                </use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-
-          <li class="list-connection">
-            <a href="tel:+380961111111" class="nav-contact">
-              <svg class="icon-header" width="10" height="15">
-                <use href="./images/svg/symbol.svg#icon-Vector">
-                </use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-
-        </ul>
-      </div>
 
     </div>
   </header>
@@ -123,7 +132,7 @@
       </ul>
     </section>
 
-    <section class="section-desktop">
+    <!-- <section class="section-desktop">
       <h2 class="h2-studio">Чем мы занимаемся</h2>
       <ul class="desktop-list">
 
@@ -143,14 +152,13 @@
         </li>
 
       </ul>
-    </section>
+    </section> -->
     <section class="section-command">
-      <div class="container-command">
         <h2 class="h2-studio">Наша команда</h2>
         <ul class="command-list">
 
         <li class="command-items">
-          <img src="./images/img1-4.jpg" alt="Джон Ситт" width="270" />
+          <img class="photo-command" srcset="./images/img1-4-450.jpg 450w" src="./images/img1-4.jpg" alt="Джон Ситт" />
           <h3 class="user">John Smith</h3>
           <p class="user-skill">Product Designer</p>
           <div class="container-seti">
@@ -188,7 +196,7 @@
         </li>
 
         <li class="command-items">
-          <img src="./images/img2-4.jpg" alt="Марта Стевард" width="270" />
+          <img class="photo-command" srcset="./images/img2-4-450.jpg 450w" src="./images/img2-4.jpg" alt="Марта Стевард" />
           <h3 class="user">Marta Stewart</h3>
           <p class="user-skill">Frontend Developer</p>
           <div class="container-seti">
@@ -226,7 +234,7 @@
         </li>
 
         <li class="command-items">
-          <img src="./images/img3-4.jpg" alt="Роберт Якис" width="270" />
+          <img class="photo-command" srcset="./images/img3-4-450.jpg 450w" src="./images/img3-4.jpg" alt="Роберт Якис" />
           <h3 class="user">Robert Jakis</h3>
           <p class="user-skill">Marketing</p>
           <div class="container-seti">
@@ -264,7 +272,7 @@
         </li>
 
         <li class="command-items">
-          <img src="./images/img4-4.jpg" alt="Мартин До" width="270" />
+          <img class="photo-command" srcset="./images/img4-4-450.jpg 450w" src="./images/img4-4.jpg" alt="Мартин До" />
           <h3 class="user">Martin Doe</h3>
           <p class="user-skill">UI Designer</p>
           <div class="container-seti">
@@ -301,7 +309,6 @@
           </div>
         </li>
         </ul>
-      </div>
     </section>
     <section class="section-client">
       <h2 class="h2-studio">Постоянные клиенты</h2>
@@ -354,7 +361,7 @@
   <footer>
       <div class="footer-content">
         <div class="container-adress">
-          <a href="./index.html" class="logo">Web<span class="studio-footer"> Studio</span></a>
+          <a href="./index.html" class="logo-footer">Web<span class="studio-footer"> Studio</span></a>
           <h2 class="footer-adress">г. Киев, пр-т Леси Украинки, 26</h2>
           <ul class="adress-items">
             <li class="adress-list">
@@ -410,15 +417,15 @@
 
         </div>
       </div>
-    <p class="footer-copyright">2020 | Developed by GoIT Students</p>
+    <!-- <p class="footer-copyright">2020 | Developed by GoIT Students</p> -->
   </footer>
 
   <div data-modal class="backdrop is-hidden">
     <div class="modal">
-      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      
 
       <form action="" class="form-topic">
-
+        <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
         <div class="space-form">
           <input type="text" class="form-input" name="name" id="name" placeholder=" ">
           <label for="name" class="form-label">Имя</label>
@@ -470,6 +477,8 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

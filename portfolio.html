@@ -11,54 +11,64 @@
 </head>
 
 <body>
-    <header>
-        <div class="container-header">
-    
-          <nav class="header-nav">
-            <a href="./index.html" class="logo">Web <span class="logo-studio"> Studio</span></a>
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="./index.html" class="nav-menu">Студия</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./portfolio.html" class="nav-menu current">Портфолио</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="" class="nav-menu">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-    
-          <div class="container-connection">
-            <ul class="container-connection-items">
-    
-              <li class="list-connection">
-                <a href="mailto:info@devstudio.com" class="nav-contact">
-                  <svg class="icon-header" width="16" height="11">
-                    <use href="./images/svg/symbol.svg#icon-envelope">
-                    </use>
-                  </svg>
-                  info@devstudio.com
-                </a>
-              </li>
-    
-              <li class="list-connection">
-                <a href="tel:+380961111111" class="nav-contact">
-                  <svg class="icon-header" width="10" height="15">
-                    <use href="./images/svg/symbol.svg#icon-Vector">
-                    </use>
-                  </svg>
-                  +38 096 111 11 11
-                </a>
-              </li>
-    
-            </ul>
-          </div>
-    
+  <header>
+    <div class="container-header">
+
+      <nav class="header-nav">
+        <a href="./index.html" class="logo">Web <span class="logo-studio"> Studio</span></a>
+        <button type="button" 
+                class="menu-button is-open" 
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button>
+          <svg width="40" height="40" aria-label="переключатель мобильного меню">
+            <use class="icon-menu" href="./images/svg/symbol.svg#icon-cross"></use>
+            <use class="icon-cross" href="./images/svg/symbol.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="./index.html" class="nav-menu">Студия</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./portfolio.html" class="nav-menu current">Портфолио</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="" class="nav-menu">Контакты</a>
+            </li>
+          </ul>
+          <ul>
+  
+            <li class="list-connection">
+              <a href="mailto:info@devstudio.com" class="nav-contact">
+                <svg class="icon-header" width="16" height="11">
+                  <use href="./images/svg/symbol.svg#icon-envelope">
+                  </use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+  
+            <li class="list-connection">
+              <a href="tel:+380961111111" class="nav-contact">
+                <svg class="icon-header" width="10" height="15">
+                  <use href="./images/svg/symbol.svg#icon-Vector">
+                  </use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+  
+          </ul>
         </div>
-      </header>
+        
+      </nav>
+
+    </div>
+  </header>
     <main>
-        <div class="section-portfolio container">
+        <div class="section-portfolio">
             <h1 class="visually-hidden">Заголовок h1, который скроется</h1>
             <ul class="portfolio-filter">
                 <li class="filter-items">
@@ -300,6 +310,7 @@
         </div>
       <p class="footer-copyright">2020 | Developed by GoIT Students</p>
     </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
