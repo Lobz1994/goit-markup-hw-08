@@ -11,7 +11,6 @@
       padding-bottom: 94px;
     }
   }
-  /* оформляет фильтр */
   .filter-list {
     margin-bottom: 40px;
     @media screen and (min-width: $tablet) {
@@ -65,15 +64,25 @@
   
   .filter-list .item {
     margin-right: 8px;
-    margin-bottom: 8px;
+    @media screen and (max-width: $tablet) {
+      margin-bottom: 8px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      &:nth-child(4) {
+        margin-bottom: 8px;
+      }
+      &:nth-child(5) {
+        margin-bottom: 0;
+      }
+    }
     @media screen and (min-width: $tablet) {
-      & + .item {
-        margin-left: 8px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
   
-  /* оформляет примеры работ */
   
   .page-portfolio .list {
     @extend %list;
@@ -99,7 +108,7 @@
     }
   
     @media screen and (min-width: $tablet) and (max-width: 1199px) {
-      width: calc((100% - 2 * 30px) / 2);
+      width: calc((100% - 2 * 15px) / 2);
       margin-right: 30px;
       margin-bottom: 30px;
       &:nth-child(2n) {
@@ -107,7 +116,7 @@
       }
     }
     @media screen and (min-width: $desktop) {
-      width: calc((100% - 3 * 30px) / 3);
+      width: calc((100% - 3 * 20px) / 3);
       margin-right: 30px;
       margin-bottom: 30px;
       &:nth-child(3n) {
@@ -127,8 +136,9 @@
   .page-portfolio .exemple {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  
-    height: 294px;
+  display: block;
+    height: auto;
+    width: 100%;
   }
   
   .exemple-description {
